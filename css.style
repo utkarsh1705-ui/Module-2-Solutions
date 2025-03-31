@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.box {
+    background-color: lightgray;
+    border: 1px solid black;
+    padding: 20px;
+    width: 30%;
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: 1px solid black;
+}
+
+@media (max-width: 991px) {
+    .box {
+        width: 45%;
+    }
+}
+
+@media (max-width: 767px) {
+    .box {
+        width: 100%;
+    }
+}
